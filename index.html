@@ -1,12 +1,22 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" defer src="index.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A community feed of posts loaded from JSONPlaceholder." />
+    <title>Flatbook | Posts</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
-    <header> Flatbook </header>
-    <ul id = 'post-list'>
-    </ul>
+    <header class="site-header">Flatbook</header>
+    <main>
+      <h2>Posts</h2>
+      <button id="random-post-button" type="button">Show me a random post</button>
+      <p id="feed-status" role="status" aria-live="polite"></p>
+      <ul id="post-list" aria-live="polite" aria-label="Posts">
+        <li>Loading posts…</li>
+      </ul>
+    </main>
   </body>
 </html>
